@@ -1,0 +1,30 @@
+.d-flex{
+    display: flex;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-padding{
+    padding: 20px;
+}
+
+.margin-top{
+    margin-top: 30px;
+}
+.p-relative{
+    position: relative;
+}
+
+.p-absolute{
+    position: absolute;
+}
+
+.p-center{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
