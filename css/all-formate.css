@@ -11,16 +11,36 @@
 .justify-between{
     justify-content: space-between;
 }
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.flex-column{
+    flex-direction: column;
+}
 .gap-20{
     gap: 20px;
 }
+
+.d-grid{
+    display: grid;
+}
+
+.grid-system{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
 .m-padding{
     padding: 20px;
 }
+
 .padding-t-b{
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
 .margin-top{
     margin-top: 30px;
 }
@@ -28,6 +48,7 @@
 .margin-bottom{
     margin-bottom: 20px;
 }
+
 .p-relative{
     position: relative;
 }
@@ -36,8 +57,22 @@
     position: absolute;
 }
 
+.absolute-top{
+    top: 0;
+    left: 0;
+}
+
 .p-center{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.w-h-full{
+    width: 100%;
+    height: 100%;
+}
+
+.m-b-color{
+    background-color: #f4fafd;
 }

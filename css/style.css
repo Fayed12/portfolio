@@ -9,6 +9,7 @@
 :root{
     --main-color:#149ddd;
     --second-color:#292f37;
+    --third-color:#f4fafd;
     --sub-color:#999;
     --main-transition:.4s;
 }
@@ -94,7 +95,6 @@ a{
     color: var(--sub-color);
 }
 /* end section header */
-
 /* end global formate */
 /* start all-page  */
 .all-page .sidebar {
@@ -163,7 +163,6 @@ a{
 }
 .all-page .sidebar .sidebar-content ul li:hover a i{
     color: var(--main-color);
-    animation: move 1s linear infinite alternate ;
     transform: scale(1.2);
 }
 @media (max-width:1200px) {
@@ -397,6 +396,121 @@ a{
     }
 }
 /* end about */
+/* start skills */
+.Skills{
+    width: 100%;
+    background-color: var(--third-color);
+}
+.Skills .skills-content div {
+    flex-basis: 50%;
+}
+@media (max-width:767px) {
+    .Skills .skills-content{
+        flex-direction: column;
+        gap: 0;
+    }
+    .Skills .skills-content div {
+        flex-basis: 100%;
+    }
+}
+.Skills .skills-content div .prog .details span:first-child{
+    font-family: sans-serif;
+}
+.Skills .skills-content div .prog .details span:last-child{
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+}
+.Skills .skills-content .prog:not(:last-child){
+    margin-bottom: 30px;
+}
+.Skills .skills-content .prog .line {
+    margin: 7px 0 20px;
+}
+.Skills .skills-content .prog .line {
+    width: 100%;
+    height: 10px;
+    background-color: #e3e2e2;
+    border-radius: 10px;
+}
+.Skills .skills-content .prog .line span{
+    height: 100%;
+    background-color: var(--main-color);
+    display: block;
+    border-radius: 10px;
+}
+/* end skills */
+/* start Portfolio */
+.Portfolio ul{
+    margin: 60px 0 40px;
+    gap: 5px;
+}
+.Portfolio ul li a{
+    padding: 10px 15px;
+    color: black;
+    transition: background-color calc(var(--main-transition) * 2) , color var(--main-transition);
+}
+.Portfolio ul li .active{
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 10px;
+}
+.Portfolio ul li a:hover{
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 10px;
+}
+.Portfolio .portfolio-content .box{
+    border-radius: 15px;
+    overflow: hidden;
+}
+.Portfolio .portfolio-content .box img{
+    width: 100%;
+    border-radius: 15px;
+    transition: var(--main-transition);
+}
+.Portfolio .portfolio-content .box:hover img{
+    transform: scale(1.1);
+}
+.Portfolio .portfolio-content .box .back{
+    padding: 10px;
+    color: white;
+    background-color: rgb(0, 0, 0 , .7);
+    transition: var(--main-transition);
+    opacity: 0;
+}
+.Portfolio .portfolio-content .box .back h4{
+    width: fit-content;
+    background-color: var(--main-color);
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-weight: normal;
+}
+.Portfolio .portfolio-content .box .back .links{
+    text-align: center;
+}
+.Portfolio .portfolio-content .box .back .links i{
+    padding: 5px;
+    font-size: 25px;
+    transition: var(--main-transition);
+}
+.Portfolio .portfolio-content .box .back .links i:hover{
+    color: var(--main-color);
+    transform: scale(1.2);
+}
+.Portfolio .portfolio-content .box .back p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: #999;
+}
+.Portfolio .portfolio-content .box:hover .back{
+    opacity: 1;
+}
+/* end Portfolio */
 /* end conetnt */
 /*start animation */
 /* @keyframes appear {
