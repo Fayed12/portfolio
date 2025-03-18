@@ -5,6 +5,7 @@
     -moz-box-sizing: border-box;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 :root{
     --main-color:#149ddd;
@@ -304,7 +305,7 @@ a{
 .about .about-content img{
     width: 350px;
     border-radius: 20px;
-    animation: move 1s linear infinite alternate ;
+    animation: move-img 1s linear infinite alternate ;
 }
 .about .about-content .description h3 {
     margin-bottom: 10px;
@@ -452,6 +453,14 @@ a{
     color: black;
     transition: background-color calc(var(--main-transition) * 2) , color var(--main-transition);
 }
+@media (max-width:992px) {
+    .Portfolio ul{
+        gap: 4px;
+    }
+    .Portfolio ul li a{
+        padding: 5px 10px;
+    }
+}
 .Portfolio ul li .active{
     background-color: var(--main-color);
     color: white;
@@ -511,6 +520,270 @@ a{
     opacity: 1;
 }
 /* end Portfolio */
+/* start Services */
+.Services .services-content{
+    margin-top: 50px;
+}
+.Services .services-content .box{
+    cursor: pointer;
+}
+.Services .services-content .box i{
+    font-size: 25px;
+    margin-right: 10px;
+    color: white;
+    background-color: var(--main-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--main-transition);
+}
+.Services .services-content .box:hover i{
+    color: var(--main-color);
+    background-color: white;
+    border: 1px solid var(--main-color);
+}
+.Services .services-content .box .text h3{
+    margin-bottom: 10px;
+    font-size: 18px;
+    transition: var(--main-transition);
+}
+.Services .services-content .box:hover .text h3{
+    color: var(--main-color);
+}
+.Services .services-content .box .text p{
+    font-size: 16px;
+    text-align: justify;
+    color: var(--sub-color);
+}
+/* end Services */
+/* start Testimonials */
+.Testimonials{
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+    background-color: white;
+}
+.Testimonials .rotat{
+    width: 1120px;
+}
+.Testimonials .rotat .box{
+    min-width: 400px;
+}
+.Testimonials .rotat .box p{
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #dbe3e7;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+}
+.Testimonials .rotat .box p::before{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 30px;
+    border-style: solid;
+    border-color: #dbe3e7 transparent transparent transparent;
+}
+.Testimonials .rotat .box p i:first-child{
+    margin-right: 10px;
+}
+.Testimonials .rotat .box i:last-child{
+    margin-left: 10px;
+}
+.Testimonials .rotat .box p i{
+    font-size: 24px;
+    color: var(--main-color);
+}
+.Testimonials .rotat .box .end img{
+    width: 100px;
+    border-radius: 50%;
+    transition: var(--main-transition);
+}
+.Testimonials .rotat .box .end img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.Testimonials .one{
+    animation: rotaton-c1 15s linear infinite alternate ;
+    margin-top: 50px;
+}
+.Testimonials .bollet {
+    gap: 10px;
+}
+.Testimonials .bollet span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    transition: var(--main-transition);
+    border-radius: 50%;
+    border: 1px solid var(--main-color);
+}
+.Testimonials .bollet span:nth-child(3){
+    background-color: var(--main-color);
+}  
+.Testimonials .bollet span:hover{
+    background-color: var(--main-color);
+}
+/* end Testimonials */
+/* start contact */
+.contact .contact-form{
+    margin-top: 60px;
+    gap: 30px;
+    /* flex-wrap: wrap; */
+}
+.contact .contact-form .form-one{
+    flex-basis: 45%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+.contact .contact-form .form-one .box{
+    margin-bottom: 30px;
+}
+.contact .contact-form .form-one .box .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.contact .contact-form .form-one .box i{
+    color: var(--main-color);
+    font-size: 20px;
+    background-color: rgb(20, 157, 221 , .2);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: var(--main-transition)
+}
+.contact .contact-form .form-one .box:hover i{
+    color: white;
+    background-color: var(--main-color);
+}
+.contact .contact-form .form-one .box .text h3{
+    margin-bottom: 6px;
+    transition: var(--main-transition);
+}
+.contact .contact-form .form-one .box:hover .text h3{
+    color: var(--main-color);
+}
+.contact .contact-form .form-one .box .text p{
+    font-size: 13px;
+    color: var(--sub-color);
+}
+.contact .contact-form .form-one iframe{
+    border-radius: 15px;
+    width: 100%;
+}
+.contact .contact-form .form-two{
+    flex-basis: 55%;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+}
+.contact .contact-form .form-two form{
+    margin-top: 30px;
+}
+.contact .contact-form .form-two form div{
+    position: relative;
+}
+.contact .contact-form .form-two form div .name-box input{
+    margin-right: 10px;
+}
+.name-box {
+    width: 49%;
+}
+.email-box{
+    width: 49%;
+}
+.contact .contact-form .form-two form div input{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid var(--main-color);
+    margin-bottom: 40px;
+    padding: 0;
+    text-indent: 5px;
+}
+.contact .contact-form .form-two form div label{
+    position: absolute;
+    left: 20px;
+    top: 1px;
+    background-color: white;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    transition: var(--main-transition);
+}
+.contact .contact-form .form-two form div input:focus + label,
+.contact .contact-form .form-two form div input:valid + label{
+    top: -20px;
+    left: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.contact .contact-form .form-two form textarea{
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid var(--main-color);
+    resize: none;
+}
+.contact .contact-form .form-two form div textarea:focus + label,
+.contact .contact-form .form-two form div textarea:valid + label{
+    top: -20px;
+    left: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+.contact .contact-form .form-two form button{
+    width: 120px;
+    height: 50px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: var(--main-transition);
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.contact .contact-form .form-two form button:hover{
+    background-color: rgb(20, 157, 221 , .7);
+}
+
+@media (max-width:992px) {
+    .contact .contact-form{
+        flex-direction: column;
+    }
+    .contact .contact-form .form-one{
+        flex-basis: 100%;
+    }
+    .contact .contact-form .form-two{
+        flex-basis: 100%;
+    }
+}
+/* end contact */
 /* end conetnt */
 /*start animation */
 /* @keyframes appear {
@@ -551,8 +824,36 @@ a{
     } 
 }
 @keyframes move {
+    25%{
+        transform: translatex(-400px);
+    }
+    50%{
+        transform: translatex(-870px);
+    }
+    100%{
+        transform: translatex(0px);
+    }
+}
+@keyframes move-img {
     to{
         transform: translateY(-5px);
+    }
+}
+@keyframes rotaton-c1 {
+    0% , 25%{
+        transform: translateX(0px);
+    }
+    26% , 45%{
+        transform: translateX(-420px);
+    }
+    46% , 60%{
+        transform: translateX(-840px);
+    }
+    61% , 80%{
+        transform: translateX(-420px);
+    }
+    81% , 100%{
+        transform: translateX(0px);
     }
 }
 /* end animation */
