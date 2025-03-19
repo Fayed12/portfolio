@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    font-family: "Winky Sans", sans-serif;
 }
 :root{
     --main-color:#149ddd;
@@ -26,14 +27,6 @@
 }
 html{
     scroll-behavior: smooth;
-}
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-a{
-    text-decoration: none;
 }
 /* start container */
 @media (max-width:768px) {
@@ -94,21 +87,23 @@ a{
 .section-header-para{
     line-height: 1.6;
     color: var(--sub-color);
+    letter-spacing: 1px;
 }
 /* end section header */
 /* end global formate */
-/* start all-page  */
+/* start sidebar */
 .all-page .sidebar {
     width: 300px;
     background-color: black;
     color: white;
-    min-height: 100vh;
+    max-height: 100vh;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
 }
 .all-page .sidebar a{
     color: white;
 }
-/* end all-page  */
-/* start sidebar */
 .all-page .sidebar .sidebar-header img{
     width: 120px;
     border-radius: 50%;
@@ -167,6 +162,9 @@ a{
     transform: scale(1.2);
 }
 @media (max-width:1200px) {
+    .all-page{
+        flex-direction: column;
+    }
     .all-page .sidebar .sidebar-content ul li a i{
         margin: 0 0 10px;
         font-size: 20px;
@@ -177,15 +175,12 @@ a{
         justify-content: center;
         align-items: center;
     }
-    .all-page{
-        flex-direction: column;
-    }
     .all-page .sidebar {
         width: 100%;
         min-height: 100px;
-    }
-    .all-page .sidebar {
-        position: relative;
+        position: sticky;
+        top: -275px;
+        z-index: 1000;
     }
     .all-page .sidebar .sidebar-content ul{
         display: flex;
@@ -201,11 +196,6 @@ a{
     }
     .all-page .sidebar .sidebar-content ul li:not(:last-child) {
         margin-bottom: 0px;
-    }
-    .all-page .sidebar{
-        position: sticky;
-        top: -275px;
-        z-index: 1000;
     }
 }
 @media (max-width:768px) {
@@ -264,7 +254,6 @@ a{
 .content .home .text h3{
     font-size: 45px;
     margin-bottom: 10px;
-    font-family: sans-serif;
 }
 .content .home .text p{
     font-size: 30px;
@@ -288,7 +277,7 @@ a{
     color: var(--main-color);
     font-weight: 600;
     margin-left: 10px;
-    animation: words 20s infinite ;
+    animation: words 15s infinite ;
 }
 .content .home .text p span::after{
     content: "";
@@ -298,7 +287,7 @@ a{
     background-color: var(--second-color);
     border-left: 2px solid var(--second-color);
     right: -8px;
-    animation: cursor .8s infinite , typing 15s steps(14) infinite;
+    animation: cursor .8s infinite , typing 15s steps(15) infinite;
 }
 /* end home */
 /* start about */
@@ -312,7 +301,6 @@ a{
 }
 .about .about-content .description p{
     font-size: 15px;
-    line-height: 1.6;
     color: var(--sub-color);
 }
 .about .about-content .description ul li i{
@@ -353,16 +341,13 @@ a{
 }
 .about-stat{
     margin-top: 100px;
-    gap: 2.6%;
-    flex-wrap: wrap;
-}
-.about-stat div{
-    width: 23%;
 }
 .about-stat div i{
     margin-right: 20px;
-    font-size: 40px;
+    font-size: 45px;
     color: var(--main-color);
+    position: relative;
+    top: 15px;
 }
 .about-stat div .text{
     width: 150px;
@@ -381,17 +366,7 @@ a{
     font-size:16 ;
     color: #444;
 }
-@media (max-width:768px) {
-    .about-stat{
-        flex-direction: column;
-    }
-    .about-stat div{
-        width: 100%;
-        margin-bottom:20px ;
-    }
-    .about-stat div .text i{
-        margin-right: 0px;
-    }
+@media (max-width:450px) {
     .about-stat div .text{
         flex-grow: 1;
     }
@@ -400,7 +375,6 @@ a{
 /* start skills */
 .Skills{
     width: 100%;
-    background-color: var(--third-color);
 }
 .Skills .skills-content div {
     flex-basis: 50%;
@@ -413,9 +387,6 @@ a{
     .Skills .skills-content div {
         flex-basis: 100%;
     }
-}
-.Skills .skills-content div .prog .details span:first-child{
-    font-family: sans-serif;
 }
 .Skills .skills-content div .prog .details span:last-child{
     background-color: var(--main-color);
@@ -458,7 +429,7 @@ a{
         gap: 4px;
     }
     .Portfolio ul li a{
-        padding: 5px 10px;
+        padding: 3px 7px;
     }
 }
 .Portfolio ul li .active{
@@ -500,10 +471,11 @@ a{
 .Portfolio .portfolio-content .box .back .links{
     text-align: center;
 }
-.Portfolio .portfolio-content .box .back .links i{
+.Portfolio .portfolio-content .box .back .links a i{
     padding: 5px;
     font-size: 25px;
     transition: var(--main-transition);
+    color: white;
 }
 .Portfolio .portfolio-content .box .back .links i:hover{
     color: var(--main-color);
@@ -632,12 +604,23 @@ a{
 .Testimonials .bollet span:hover{
     background-color: var(--main-color);
 }
+@media (max-width:768px) {
+    .Testimonials .rotat{
+        font-size: 13px;
+    }
+    .Testimonials .rotat .box {
+        min-width: 340px;
+    }
+    .Testimonials .one{
+    animation: rotaton-c2 15s linear infinite alternate ;
+    }
+
+}
 /* end Testimonials */
 /* start contact */
 .contact .contact-form{
     margin-top: 60px;
     gap: 30px;
-    /* flex-wrap: wrap; */
 }
 .contact .contact-form .form-one{
     flex-basis: 45%;
@@ -784,6 +767,53 @@ a{
     }
 }
 /* end contact */
+/* start footer */
+footer{
+    background-color: var(--second-color);
+    color: white;
+    padding: 20px 0;
+}
+footer .one strong{
+    color: var(--main-color);
+}
+footer .two span {
+    color: var(--main-color);
+}
+@media (max-width:768px) {
+    footer{
+        font-size: 13px;
+    }
+}
+/* end footer */
+/* start end */
+.last-button{
+    width: fit-content;
+    position: fixed;
+    background-color: var(--main-color);
+    bottom: 110px;
+    right: 0;
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 20px;
+    z-index: 10000;
+    transition: var(--main-transition);
+}
+.last-button a{
+    color: white;
+    transition: var(--main-transition);
+}
+.last-button:hover{
+    background-color: rgb(20, 157, 221 , .8);
+}
+.last-button:hover a{
+    animation: cursor-fixed 2s linear infinite alternate ;
+}
+/* end end */
 /* end conetnt */
 /*start animation */
 /* @keyframes appear {
@@ -816,10 +846,10 @@ a{
     }
 }
 @keyframes typing {
-    10% , 15% , 30% , 35% , 50% , 55% , 70% , 75% , 90% , 95%{
+    10% , 15% , 30% , 35% , 51% , 55% , 90% , 95%{
         width: 0;
     }
-    5% , 20% , 25% , 40% , 45% , 60% , 65% , 80% , 85%{
+    5% , 20% , 25% , 40% , 45%, 50% , 60% , 65% , 70% ,75%, 80% , 85%{
         width: calc(100% + 8px);
     } 
 }
@@ -854,6 +884,31 @@ a{
     }
     81% , 100%{
         transform: translateX(0px);
+    }
+}
+@keyframes rotaton-c2 {
+    0% , 25%{
+        transform: translateX(0px);
+    }
+    26% , 45%{
+        transform: translateX(-360px);
+    }
+    46% , 60%{
+        transform: translateX(-725px);
+    }
+    61% , 80%{
+        transform: translateX(-350px);
+    }
+    81% , 100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes cursor-fixed {
+    0%, 10%, 20%, 50%, 80%, 100% {
+        transform: translateY(0px);
+    }
+    40%, 60% {
+        transform: translateY(5px);
     }
 }
 /* end animation */

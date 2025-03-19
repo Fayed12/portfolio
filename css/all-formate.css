@@ -32,6 +32,11 @@
     gap: 20px;
 }
 
+.stat-g-system{
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2%;
+}
+
 .m-padding{
     padding: 20px;
 }
@@ -75,4 +80,13 @@
 
 .m-b-color{
     background-color: #f4fafd;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
 }
