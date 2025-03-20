@@ -225,7 +225,7 @@ html{
 }
 /* start home */
 .content .home{
-    background-image: url(../image/hero-bg.jpg);
+    background-image: url(../image/home.jpg);
     width: 100%;
     min-height: 100vh;
     background-size: cover;
@@ -246,7 +246,6 @@ html{
     position: absolute;
     top: 50%;
     padding: 5px 0 10px 20px;
-    background-color: var(--second-color);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     width: 400px;
@@ -284,7 +283,7 @@ html{
     position: absolute;
     width: calc(100% + 8px);
     height: 110%;
-    background-color: var(--second-color);
+    background-color: black;
     border-left: 2px solid var(--second-color);
     right: -8px;
     animation: cursor .8s infinite , typing 15s steps(15) infinite;
@@ -313,6 +312,9 @@ html{
     font-size: 17px;
     color: black;
     font-weight: 700;
+}
+.about .about-content .description ul li span span a{
+    color:#444 ;
 }
 .about .about-content .description ul li span span{
     font-size: 16px;
@@ -471,7 +473,8 @@ html{
 .Portfolio .portfolio-content .box .back .links{
     text-align: center;
 }
-.Portfolio .portfolio-content .box .back .links a i{
+.Portfolio .portfolio-content .box .back .links a i,
+.Portfolio .portfolio-content .box .back .links  i{
     padding: 5px;
     font-size: 25px;
     transition: var(--main-transition);
@@ -912,3 +915,96 @@ footer .two span {
     }
 }
 /* end animation */
+
+/* start Portfolio Details */
+.content .head-bar {
+    background-color: black;
+    color: white;
+}
+.content .head-bar .links a{
+    color: var(--main-color);
+}
+.content .head-bar .links span::before{
+    content: "/";
+    margin: 0 5px;
+    color: var(--sub-color);
+}
+@media (max-width:768px) {
+    .content .head-bar h1{
+        font-size: 20px;
+    }
+}
+.details{
+    padding-top: 60px;
+}
+.details .image{
+    width:70% ;
+}
+.details .image .bollets{
+    gap: 5px;
+    margin-top: 30px;
+}
+.details .image .bollets span{
+    width: 15px;
+    height: 15px;
+    display: block;
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+}
+.details .image .bollets .active{
+    background-color: var(--main-color);
+}
+.details .image .image-scroll{
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+.details .image img{
+    max-width: 100% ;
+    border-radius: 15px;
+    scroll-snap-align: center;
+}
+.details .Project-information{
+    width: 30%;
+}
+.details .Project-information .information{
+    background-color: white;
+    border-radius: 15px;
+}
+.details .Project-information .information h3{
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e3e2e2;
+    font-size: 23px;
+    font-weight: 600;
+}
+.details .Project-information .information ul li{
+    margin-bottom: 10px;
+    color: #555;
+}
+.details .Project-information .information ul li strong{
+    font-weight: 500;
+    color: initial;
+}
+.details .Project-information .desc{
+    margin-top: 30px;
+}
+.details .Project-information .desc h2{
+    font-size: 25px;
+    font-weight: 600;
+}
+.details .Project-information .desc p{
+    margin-top: 30px;
+    color: #777;
+}
+@media (max-width:992px) {
+    .details .container{
+        flex-direction: column;
+    }
+    .details .image{
+        width:100% ;
+    }
+    .details .Project-information{
+        width: 100%;
+    }
+}
+/* end Portfolio Details */
