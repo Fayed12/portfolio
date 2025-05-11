@@ -444,16 +444,19 @@ html{
     margin: 60px 0 40px;
     gap: 5px;
 }
-.Portfolio ul li a{
+.Portfolio ul li button{
     padding: 10px 15px;
     color: black;
+    background-color: white;
+    outline: none;
+    border: none;
     transition: background-color calc(var(--main-transition) * 2) , color var(--main-transition);
 }
 @media (max-width:992px) {
     .Portfolio ul{
         gap: 4px;
     }
-    .Portfolio ul li a{
+    .Portfolio ul li button{
         padding: 3px 7px;
     }
 }
@@ -462,7 +465,7 @@ html{
     color: white;
     border-radius: 10px;
 }
-.Portfolio ul li a:hover{
+.Portfolio ul li button:hover{
     background-color: var(--main-color);
     color: white;
     border-radius: 10px;
@@ -569,14 +572,15 @@ html{
 .Testimonials{
     overflow: hidden;
     position: relative;
-    z-index: 100;
-    background-color: white;
 }
 .Testimonials .rotat{
-    width: 1120px;
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0px;
+    margin-top: 50px;
 }
-.Testimonials .rotat .box{
-    min-width: 400px;
+.Testimonials .rotat .rotat-content{
+    border-radius: 15px;
 }
 .Testimonials .rotat .box p{
     text-align: center;
@@ -616,39 +620,6 @@ html{
 .Testimonials .rotat .box .end img:hover{
     transform: scale(1.1);
     cursor: pointer;
-}
-.Testimonials .one{
-    animation: rotaton-c1 15s linear infinite alternate ;
-    margin-top: 50px;
-}
-.Testimonials .bollet {
-    gap: 10px;
-}
-.Testimonials .bollet span {
-    display: block;
-    width: 15px;
-    height: 15px;
-    transition: var(--main-transition);
-    border-radius: 50%;
-    border: 1px solid var(--main-color);
-}
-.Testimonials .bollet span:nth-child(3){
-    background-color: var(--main-color);
-}  
-.Testimonials .bollet span:hover{
-    background-color: var(--main-color);
-}
-@media (max-width:768px) {
-    .Testimonials .rotat{
-        font-size: 13px;
-    }
-    .Testimonials .rotat .box {
-        min-width: 340px;
-    }
-    .Testimonials .one{
-    animation: rotaton-c2 15s linear infinite alternate ;
-    }
-
 }
 /* end Testimonials */
 /* start contact */
@@ -849,16 +820,6 @@ footer .two span {
 /* end end */
 /* end conetnt */
 /*start animation */
-/* @keyframes appear {
-    from{
-        opacity: .5;
-        transform: translateX(-100px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0px);
-    }
-} */
 @keyframes cursor {
     to{
         border-left: 2px solid var(--main-color);
@@ -902,40 +863,6 @@ footer .two span {
         transform: translateY(-5px);
     }
 }
-@keyframes rotaton-c1 {
-    0% , 25%{
-        transform: translateX(0px);
-    }
-    26% , 45%{
-        transform: translateX(-420px);
-    }
-    46% , 60%{
-        transform: translateX(-840px);
-    }
-    61% , 80%{
-        transform: translateX(-420px);
-    }
-    81% , 100%{
-        transform: translateX(0px);
-    }
-}
-@keyframes rotaton-c2 {
-    0% , 25%{
-        transform: translateX(0px);
-    }
-    26% , 45%{
-        transform: translateX(-360px);
-    }
-    46% , 60%{
-        transform: translateX(-725px);
-    }
-    61% , 80%{
-        transform: translateX(-350px);
-    }
-    81% , 100%{
-        transform: translateX(0px);
-    }
-}
 @keyframes cursor-fixed {
     0%, 10%, 20%, 50%, 80%, 100% {
         transform: translateY(0px);
@@ -945,7 +872,6 @@ footer .two span {
     }
 }
 /* end animation */
-
 /* start Portfolio Details */
 .content .head-bar {
     background-color: black;

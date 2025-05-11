@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="css/all-formate.css">
         <!-- main file -->
         <link rel="stylesheet" href="css/style.css">
+        <!-- swiper file -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
         <!-- logo -->
         <link rel="icon" href="image/favicon.png" type="image/x-icon">
         <!-- font -->
@@ -29,19 +31,34 @@
                         alt="image">
                     <h3 class="p-center">Mohamed Fayed</h3>
                     <ul class="flex-center">
-                        <li><a title="link"
-                                href="https://www.linkedin.com/in/mohamed-fayed-b27928256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
-                                    class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a title="link" href="https://github.com/Fayed12"><i
-                                    class="fa-brands fa-github"></i></a></li>
-                        <li><a title="link"
-                                href="https://www.facebook.com/share/1A2on35oDZ/"><i
-                                    class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a title="link" href="#"><i
-                                    class="fa-brands fa-x-twitter"></i></a></li>
-                        <li><a title="link"
-                                href="https://www.instagram.com/fayed1_?igsh=bjB1b2wyZWExODAz"><i
-                                    class="fa-brands fa-instagram"></i></a></li>
+                        <li>
+                            <a title="link"
+                                href="https://www.linkedin.com/in/mohamed-fayed-b27928256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="link" href="https://github.com/Fayed12">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="link"
+                                href="https://www.facebook.com/share/1A2on35oDZ/">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="link"
+                                href="https://www.instagram.com/fayed1_?igsh=bjB1b2wyZWExODAz">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a title="link" href="#">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="sidebar-content">
@@ -182,17 +199,15 @@
                             <div class="box d-flex">
                                 <i class="fa-solid fa-face-smile"></i>
                                 <div class="text flex-grow">
-                                    <span data-purecounter-start="0"
-                                        data-purecounter-end="11"
-                                        data-purecounter-duration="0">11</span>
-                                    <p><span>Happy Clients </span>Customer
+                                    <span data-value="11" class="spandata">0</span>
+                                    <p><span>Happy Clients</span>Customer
                                         satisfaction rating</p>
                                 </div>
                             </div>
                             <div class="box d-flex">
                                 <i class="fa-solid fa-list-check"></i>
                                 <div class="text flex-grow">
-                                    <span>9</span>
+                                    <span data-value="9" class="spandata">0</span>
                                     <p><span>Projects </span>Completed
                                         projects</p>
                                 </div>
@@ -200,7 +215,7 @@
                             <div class="box d-flex">
                                 <i class="fa-solid fa-headset"></i>
                                 <div class="text flex-grow">
-                                    <span>421</span>
+                                    <span data-value="421" class="spandata">0</span>
                                     <p><span>Hours Of Support </span>Working
                                         hours completed</p>
                                 </div>
@@ -208,7 +223,7 @@
                             <div class="box d-flex">
                                 <i class="fa-solid fa-users"></i>
                                 <div class="text flex-grow">
-                                    <span>5</span>
+                                    <span data-value="5" class="spandata">0</span>
                                     <p><span>Hard Workers </span>Our team
                                         members</p>
                                 </div>
@@ -293,15 +308,15 @@
                             precision into every project, ensuring they reflect
                             my expertise and commitment to quality.
                         </p>
-                        <ul class="d-flex flex-center margin-top margin-bottom">
-                            <li><a class="active" href="#">ALL</a></li>
-                            <li><a href="#">Biggest</a></li>
-                            <li><a href="#">The best</a></li>
-                            <li><a href="#">Trend</a></li>
-                            <li><a href="#">Books</a></li>
+                        <ul class="d-flex flex-center margin-top margin-bottom" id="portfolioMenu">
+                            <li><button class="active">ALL</button></li>
+                            <li><button>Biggest</button></li>
+                            <li><button>The best</button></li>
+                            <li><button>Trend</button></li>
+                            <li><button>Books</button></li>
                         </ul>
                         <div class="portfolio-content d-grid grid-system ">
-                            <div class="box p-relative">
+                            <div class="box p-relative biggest best all">
                                 <div class="basic">
                                     <img src="image/projectimage/project-1.png"
                                         alt="image" title="app-1">
@@ -322,7 +337,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="box p-relative">
+                            <div class="box p-relative biggest best all">
                                 <div class="basic">
                                     <img src="image/projectimage/project-2.png"
                                         alt="image" title="app-2">
@@ -343,7 +358,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="box p-relative">
+                            <div class="box p-relative Trend all">
                                 <div class="basic">
                                     <img src="image/projectimage/project-3.png"
                                         alt="image" title="app-3">
@@ -364,7 +379,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="box p-relative">
+                            <div class="box p-relative all">
                                 <div class="basic">
                                     <img src="image/projectimage/project-4.png"
                                         alt="image" title="books-1">
@@ -385,7 +400,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="box p-relative">
+                            <div class="box p-relative best all">
                                 <div class="basic">
                                     <img src="image/projectimage/project-5.png"
                                         alt="image" title="books-2">
@@ -406,7 +421,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="box p-relative">
+                            <div class="box p-relative books all">
                                 <div class="basic">
                                     <img src="image/projectimage/project-6.png"
                                         alt="image" title="books-3">
@@ -427,7 +442,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="box p-relative">
+                            <div class="box p-relative Trend all">
                                 <div class="basic">
                                     <img src="image/projectimage/project-7.png"
                                         alt="image" title="branding-1">
@@ -448,7 +463,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="box p-relative">
+                            <div class="box p-relative best Trend all">
                                 <div class="basic">
                                     <img src="image/projectimage/project-8.png"
                                         alt="image" title="branding-2">
@@ -468,7 +483,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="box p-relative">
+                            <div class="box p-relative Trend all">
                                 <div class="basic">
                                     <img src="image/projectimage/project-9.png"
                                         alt="image" title="branding-3">
@@ -496,34 +511,30 @@
                 <div class="Services padding-t-b m-b-color " id="Services">
                     <div class="container">
                         <h3 class="section-header"> Services</h3>
-                        <p class="section-header-para margin-bottom">Magnam
-                            dolores commodi suscipit. Necessitatibus eius
-                            consequatur ex aliquid fuga eum quidem. Sit sint
-                            consectetur velit. Quisquam quos quisquam
-                            cupiditate. Et nemo qui impedit suscipit alias ea.
-                            Quia fugiat sit in iste officiis commodi quidem hic
-                            quas.</p>
+                        <p class="section-header-para margin-bottom">
+                            I am a web design expert with experience in providing high-quality solutions in website development and implementation. My expertise lies in providing the best solutions and the best quality website code.
+                        </p>
                         <div class="services-content d-grid grid-system gap-20">
                             <div class="box d-flex">
                                 <div>
-                                    <i class="fa-solid fa-envelope"></i>
+                                    <i class="fa-brands fa-sketch"></i>
                                 </div>
                                 <div class="text">
-                                    <h3>Lorem Ipsum</h3>
-                                    <p>Voluptatum deleniti atque corrupti quos
-                                        dolores et quas molestias excepturi sint
-                                        occaecati cupiditate non provident</p>
+                                    <h3>UI/UX Design Implementation</h3>
+                                    <p>
+                                        Developing user-friendly and visually appealing interfaces that enhance the user experience.
+                                    </p>
                                 </div>
                             </div>
                             <div class="box d-flex">
                                 <div>
-                                    <i class="fa-solid fa-list-check"></i>
+                                    <i class="fa-solid fa-display"></i>
                                 </div>
                                 <div class="text">
-                                    <h3> Dolor Sitema</h3>
-                                    <p>Minim veniam, quis nostrud exercitation
-                                        ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat tarad limino ata</p>
+                                    <h3>Responsive Web Development</h3>
+                                    <p>
+                                        Ensuring websites work seamlessly on desktops, tablets, and mobile devices using frameworks like Bootstrap, CSS Grid and Flexbox.
+                                    </p>
                                 </div>
                             </div>
                             <div class="box d-flex">
@@ -531,44 +542,43 @@
                                     <i class="fa-solid fa-chart-simple"></i>
                                 </div>
                                 <div class="text">
-                                    <h3>Sed ut perspiciatis</h3>
-                                    <p>Duis aute irure dolor in reprehenderit in
-                                        voluptate velit esse cillum dolore eu
-                                        fugiat nulla pariatur</p>
+                                    <h3>HTML, CSS, and JavaScript Development</h3>
+                                    <p>
+                                        Building and styling web pages using front-end languages, ensuring they are functional and aesthetically pleasing.
+                                    </p>
                                 </div>
                             </div>
                             <div class="box d-flex">
                                 <div>
-                                    <i class="fa-solid fa-binoculars"></i>
+                                    <i class="fa-solid fa-gauge-high"></i>
                                 </div>
                                 <div class="text">
-                                    <h3>Magni Dolores</h3>
-                                    <p>Excepteur sint occaecat cupidatat non
-                                        proident, sunt in culpa qui officia
-                                        deserunt mollit anim id est laborum</p>
+                                    <h3>Website Performance Optimization</h3>
+                                    <p>
+                                        Enhancing speed, loading times, and overall performance to improve user experience and SEO rankings.
+                                    </p>
                                 </div>
                             </div>
                             <div class="box d-flex">
                                 <div>
-                                    <i class="fa-solid fa-sun"></i>
+                                    <i class="fa-brands fa-chrome"></i>
                                 </div>
                                 <div class="text">
-                                    <h3>Nemo Enim</h3>
-                                    <p>At vero eos et accusamus et iusto odio
-                                        dignissimos ducimus qui blanditiis
-                                        praesentium voluptatum deleniti
-                                        atque</p>
+                                    <h3>Cross-Browser Compatibility</h3>
+                                    <p>
+                                        Making sure the website functions properly across different browsers like Chrome, Firefox, Safari, and Edge.
+                                    </p>
                                 </div>
                             </div>
                             <div class="box d-flex">
                                 <div>
-                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <i class="fa-solid fa-hurricane"></i>
                                 </div>
                                 <div class="text">
-                                    <h3>Eiusmod Tempor</h3>
-                                    <p>Et harum quidem rerum facilis est et
-                                        expedita distinctio. Nam libero tempore,
-                                        cum soluta nobis est eligendi</p>
+                                    <h3>Interactive & Animation Effects</h3>
+                                    <p>
+                                        Adding engaging animations and interactivity using CSS animations, GSAP, or JavaScript libraries.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -579,115 +589,101 @@
                 <div class="Testimonials padding-t-b " id="Testimonials">
                     <div class="container">
                         <h3 class="section-header">Testimonials</h3>
-                        <p class="section-header-para">Necessitatibus eius
-                            consequatur ex aliquid fuga eum quidem sint
-                            consectetur velit</p>
-                        <div class="rotat d-flex">
-                            <div class="one d-flex gap-20">
-                                <div class="box box-1">
+                        <p class="section-header-para">
+                            Trusted by clients for delivering visually stunning and highly functional front-end solutions. Read what they have to say about my expertise in responsive design, performance optimization, and seamless user experiences!
+                        </p>
+                        <div class="rotat swiper">
+                            <div class="rotat-content swiper-wrapper">
+                                <div class="box box-1 swiper-slide">
                                     <p>
                                         <i class="fa-solid fa-quote-left"></i>
-                                        <span>Proin iaculis purus consequat sem
-                                            cure digni ssim donec porttitora
-                                            entum suscipit rhoncus. Accusantium
-                                            quam, ultricies eget id, aliquam
-                                            eget nibh et. Maecen aliquam, risus
-                                            at semper.</span>
+                                        <span>
+                                            Working with Mohamed was a game-changer for our website. His attention to detail and ability to create a visually stunning, responsive design made our user experience seamless. Highly recommend!
+                                        </span>
                                         <i class="fa-solid fa-quote-right"></i>
                                     </p>
                                     <div class="end flex-center flex-column">
                                         <img
-                                            src="image/testimonials/testimonials-1.jpg"
+                                            src="image/testimonials/testimonials-1.webp"
                                             alt="testimonials">
                                         <h3>Alex Mosa</h3>
-                                        <span>Ceo & Founder</span>
+                                        <span>Marketing Manager</span>
                                     </div>
                                 </div>
-                                <div class="box box-2">
+                                <div class="box box-2 swiper-slide">
                                     <p>
                                         <i class="fa-solid fa-quote-left"></i>
-                                        <span>Proin iaculis purus consequat sem
-                                            cure digni ssim donec porttitora
-                                            entum suscipit rhoncus. Accusantium
-                                            quam, ultricies eget id, aliquam
-                                            eget nibh et. Maecen aliquam, risus
-                                            at semper.</span>
+                                        <span>
+                                            Mohamed transformed our outdated website into a modern, interactive platform that’s easy to navigate. His understanding of user experience is top-notch!
+                                        </span>
                                         <i class="fa-solid fa-quote-right"></i>
                                     </p>
                                     <div class="end flex-center flex-column">
                                         <img
-                                            src="image/testimonials/testimonials-2.jpg"
+                                            src="image/testimonials/testimonials-2.webp"
                                             alt="testimonials">
                                         <h3>sara jace</h3>
                                         <span>Designer</span>
                                     </div>
                                 </div>
-                                <div class="box box-3">
+                                <div class="box box-3 swiper-slide">
                                     <p>
                                         <i class="fa-solid fa-quote-left"></i>
-                                        <span>Proin iaculis purus consequat sem
-                                            cure digni ssim donec porttitora
-                                            entum suscipit rhoncus. Accusantium
-                                            quam, ultricies eget id, aliquam
-                                            eget nibh et. Maecen aliquam, risus
-                                            at semper.</span>
+                                        <span>
+                                            Our website was slow and clunky before Mohamed stepped in. After his optimization work, it loads twice as fast, and our conversion rates have significantly improved!
+                                        </span>
                                         <i class="fa-solid fa-quote-right"></i>
                                     </p>
                                     <div class="end flex-center flex-column">
                                         <img
-                                            src="image/testimonials/testimonials-3.jpg"
+                                            src="image/testimonials/testimonials-3.webp"
                                             alt="testimonials">
                                         <h3>nore Alex</h3>
                                         <span>store owner</span>
                                     </div>
                                 </div>
-                                <div class="box box-4">
+                                <div class="box box-4 swiper-slide">
                                     <p>
                                         <i class="fa-solid fa-quote-left"></i>
-                                        <span>Proin iaculis purus consequat sem
-                                            cure digni ssim donec porttitora
-                                            entum suscipit rhoncus. Accusantium
-                                            quam, ultricies eget id, aliquam
-                                            eget nibh et. Maecen aliquam, risus
-                                            at semper.</span>
+                                        <span>
+                                            Mohamed added dynamic interactive elements that transformed our website into an engaging experience. His expertise made a huge difference!
+                                        </span>
                                         <i class="fa-solid fa-quote-right"></i>
                                     </p>
                                     <div class="end flex-center flex-column">
                                         <img
-                                            src="image/testimonials/testimonials-4.jpg"
+                                            src="image/testimonials/testimonials-4.webp"
                                             alt="testimonials">
                                         <h3>matt mose</h3>
-                                        <span>freelancer</span>
+                                        <span>Digital Marketer</span>
                                     </div>
                                 </div>
-                                <div class="box box-5">
+                                <div class="box box-5 swiper-slide">
                                     <p>
                                         <i class="fa-solid fa-quote-left"></i>
-                                        <span>Proin iaculis purus consequat sem
-                                            cure digni ssim donec porttitora
-                                            entum suscipit rhoncus. Accusantium
-                                            quam, ultricies eget id, aliquam
-                                            eget nibh et. Maecen aliquam, risus
-                                            at semper.</span>
+                                        <span>
+                                            Mohamed's expertise in front-end development made our website not only visually appealing but also highly functional. The smooth animations and responsive design have greatly improved user interaction!
+                                        </span>
                                         <i class="fa-solid fa-quote-right"></i>
                                     </p>
                                     <div class="end flex-center flex-column">
                                         <img
-                                            src="image/testimonials/testimonials-5.jpg"
+                                            src="image/testimonials/testimonials-5.webp"
                                             alt="testimonials">
                                         <h3>john mora</h3>
-                                        <span>flutter</span>
+                                        <span>Product Manager</span>
                                     </div>
                                 </div>
                             </div>
+                            <div class="swiper-pagination"></div>
                         </div>
-                        <div class="bollet d-flex flex-center margin-top">
+                        <!-- <div class="bollet d-flex flex-center margin-top">
                             <span></span>
                             <span></span>
                             <span></span>
                             <span></span>
                             <span></span>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <!-- end Testimonials -->
@@ -794,6 +790,7 @@
                 <!-- end fixed button -->
             </div>
         </div>
+        <script src="swiper-bundle.min.js"></script>
         <script src="main.js"></script>
     </body>
 </html>
