@@ -99,3 +99,14 @@ ul {
 a{
     text-decoration: none;
 }
+
+.diraction-rtl{
+    direction: rtl;
+}
+.diraction-ltr{
+    direction: ltr;
+}
+
+.d-block{
+    display: block;
+}

@@ -1,0 +1,99 @@
+/* start section header */
+.section-header::after{
+    width: 70%;
+    right: 0;
+}
+/* end section header */
+/* start sidebar */
+.all-page .sidebar .sidebar-header img{
+    left: -50%;
+    transform: translateX(50%);
+}
+.header-name{
+    left: -50%;
+    transform: translateX(50%);
+}
+.all-page .sidebar .sidebar-header ul li:not(:last-child){
+    margin-right: 0px;
+    margin-left: 10px;
+}
+.all-page .sidebar .sidebar-content ul li a i{
+    margin-right: 0px;
+    margin-left: 10px;
+}
+/* end sidebar */
+/* start home */
+.content .home{
+    background-image: url(../image/home2.jpg);
+    background-position-x:55%;
+}
+.content .home .text{
+    padding: 5px 20px 10px 0px;
+}
+.content .home .text p span::before{
+    margin-left: 0px;
+    margin-right: 10px;
+}
+.content .home .text p span::after{
+    border-left:none;
+    border-right: 2px solid var(--second-color);
+    right: 0px;
+    left: -8px;
+}
+/* end home */
+/* start about */
+.about .about-content .description ul li i{
+    margin-right: 10px;
+}
+@media (max-width:992px) {
+    .about .about-content img{
+        left: -50%;
+        transform: translateX(50%);
+    }
+}
+.about-stat div i{
+    margin-right: 0px;
+    margin-left: 20px;
+}
+/* end about */
+/* start skills */
+.Skills .skills-content .prog .line span .spanvalue{
+    right: 100%;
+}
+/* end skills */
+/* start Services */
+.Services .services-content .box i{
+    margin-right: 0px;
+    margin-left: 10px;
+}
+/* end Services */
+/* start Testimonials */
+/* end Testimonials */
+/* start contact */
+.contact .contact-form .form-one .box .icon{
+    margin-right: 0px;
+    margin-left: 20px;
+}
+.contact .contact-form .form-two form div .name-box input{
+    margin-right: 0px;
+    margin-left: 10px;
+}
+.contact .contact-form .form-two form div label{
+    right: 20px;
+}
+.contact .contact-form .form-two form div input:focus + label,
+.contact .contact-form .form-two form div input:valid + label{
+    right: 20px;
+}
+.contact .contact-form .form-two form div textarea:focus + label,
+.contact .contact-form .form-two form div textarea:valid + label{
+    right: 20px;
+}
+.contact .contact-form .form-two form button{
+    left: -50%;
+    transform: translateX(50%);
+}
+/* end contact */
+.last-button{
+    left: 10px;
+}

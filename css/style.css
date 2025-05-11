@@ -1,8 +1,8 @@
 /* start global formate */
 *{
-    box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -253,8 +253,6 @@ html{
     position: absolute;
     top: 50%;
     padding: 5px 0 10px 20px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
     width: 400px;
 }
 .content .home .text h3{
@@ -379,6 +377,7 @@ html{
 .about-stat div .text p span:first-child{
     display: block;
     font-size: 17px;
+    font-weight: 600;
 }
 .about-stat div .text p span:last-child{
     font-size:13px ;
@@ -450,7 +449,7 @@ html{
     background-color: white;
     outline: none;
     border: none;
-    transition: background-color calc(var(--main-transition) * 2) , color var(--main-transition);
+    transition: var(--main-transition);
 }
 @media (max-width:992px) {
     .Portfolio ul{
@@ -595,7 +594,7 @@ html{
     position: absolute;
     width: 0px;
     height: 0px;
-    bottom: -60px;
+    bottom: -65px;
     left: 50%;
     transform: translateX(-50%);
     border-width: 30px;
@@ -759,7 +758,6 @@ html{
 .contact .contact-form .form-two form button:hover{
     background-color: rgb(20, 157, 221 , .7);
 }
-
 @media (max-width:992px) {
     .contact .contact-form{
         flex-direction: column;
