@@ -1,2 +1,2 @@
-My personal website, many technologies were used in developing the site, including: HTML، CSS، js ، Libraries such as: swiper , fontawesome , Google fonts Many new ideas have been implemented in the new version of the site, such as scrolling, hiding and showing elements. The site also supports English and Arabic languages.
+My personal website, many technologies were used in developing the site, including: HTML، CSS، JS ، Libraries such as: swiper.js , fontawesome and Google fonts, Many new ideas have been implemented in the new version of the site, such as scrolling, hiding and showing elements. The site also supports English and Arabic languages.
 Effects and interactivity have been added to the site in the modified version using JS
